@@ -1,5 +1,5 @@
 // Define the URL of the Artifactory registry
-def registry = 'https://trial1zy574.jfrog.io/'
+def registry = 'https://trial65xo0v.jfrog.io/'
 
 pipeline {
     agent any
@@ -48,7 +48,7 @@ pipeline {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "sai-libs-release-local/{1}",
+                              "target": "vaibhav-libs-release-local/{1}",
                               "flat": "false",
                               "props": "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
